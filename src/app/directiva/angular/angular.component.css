@@ -1,0 +1,40 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.sectionContenido{
+    border: 1px solid;
+    border-color: rgb(65, 218, 249);
+    width: 50%;
+    padding: 2rem;
+}
+
+form{
+    padding-bottom: 2rem;
+}
+
+img{
+    width: 100px;
+}
+
+.sectionImagen{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    padding: 1rem;
+    background-color: rgb(148, 148, 148);
+}
+
+.sectionText{
+    padding: 1rem;
+    border: 1px solid;
+    border-color: rgb(148, 148, 148);
+}
+
+input,.textMessage{
+    display: flex;
+}

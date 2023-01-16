@@ -1,0 +1,27 @@
+<section class="sectionGeneral">
+    <section class="sectionContenido">
+        <section>
+            <form action="">
+                <input type="checkbox" name="" value="inputCheckBox" (change)="inputCheckBox = !inputCheckBox">
+            </form>
+            <section *ngIf="inputCheckBox; then thenBlock; else elseBlock">
+                <!-- Esto no se mostrará -->
+            </section>
+            <ng-template #thenBlock>
+                <!-- Contenido a mostrar cuando el checkbox está activado -->    
+                <section class="row">
+                    <section class="col-12 sectionImagen">
+                        <img src="./assets/angular.png" alt="">
+                    </section>
+                    <section class="col-12 sectionText">
+                        <h4>Angular</h4>
+                        <p>Angular es un framework para apliaciones wed desarrollado en TypeSript, de codigo abierto, mantenido por Google, que se utiliza para crear y mantener apliaciones web de una sola pagina.</p>
+                    </section>
+                </section> 
+            </ng-template>
+            <ng-template #elseBlock>
+                <p class="textMessage">Activa el checkbox para mostrar el contenido.</p>
+            </ng-template>
+        </section>
+    </section>
+</section>
